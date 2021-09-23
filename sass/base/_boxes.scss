@@ -1,11 +1,29 @@
 .container {
-    width: 1200px;
-    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 1px solid tomato; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+@media screen and (min-width: 480px) {
+    .container {
+    width: 480px;
+    margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+    width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+    width: 1200px;
+    }
 }
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }

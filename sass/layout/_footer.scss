@@ -4,7 +4,7 @@
     padding-bottom: 60px;
 }
 .footer__container {
-    display: flex;
+    // display: flex;
     align-items: baseline;
 }
 .footer__logo,
@@ -16,10 +16,15 @@
     font-weight: 400;
 }
 .footer__logo {
+text-align: center;
     margin-bottom: 20px;
 }
 .address__list {
     font-style: normal;
+}
+.footer__links-list {
+    text-align: center;
+    margin-bottom: 60px;
 }
 .address__item:not(:last-child) {
 margin-bottom: 9px;
@@ -43,6 +48,8 @@ margin-bottom: 9px;
 }
 .footer__title {
     margin-bottom: 20px;
+    // margin-left: auto;
+    // margin-right: auto;
 
     color: var(--white-color);
     font-weight: 700;
@@ -52,10 +59,16 @@ margin-bottom: 9px;
     text-transform: uppercase;
 }
 .social-links-section {
-    margin-left: 72px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 .social-list {
     display: flex;
+    text-align: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 .social-list__item {
     margin-right: 10px;
@@ -82,17 +95,21 @@ margin-bottom: 9px;
     }
 }
 .footer__form-section {
-    margin-left: 93px;
+    text-align: center;
+
 }
 .form-section__wrapper {
-    display: flex;
+    // display: flex;
 }
 .footer__mail-form  {
     margin-right: 12px;
 }
 .mail-form__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
     padding: 15px 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -107,9 +124,11 @@ margin-bottom: 9px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
     &:hover,
     &:focus {
-        border-color: var (--accent-color);
+        border-color: var(--accent-color);
+        outline: none;
         }
     &::placeholder {
     font-family: Roboto;
@@ -123,11 +142,13 @@ margin-bottom: 9px;
         }
 }
 .footer__btn-submit {
-    display: inline-flex;
+    display: block;
     text-align: center;
     justify-content: center;
     text-align: center;
 
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px 28px;
 
     font-size: 16px;
