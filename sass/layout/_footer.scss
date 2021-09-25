@@ -1,11 +1,17 @@
 .footer {
     background-color: var(--grey-bg-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    // padding-top: 60px;
+    // padding-bottom: 60px;
 }
 .footer__container {
-    // display: flex;
-    align-items: baseline;
+    text-align: center;
+    padding: 60px 15px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        text-align: center;
+    }
+
 }
 .footer__logo,
 .address {
@@ -16,9 +22,39 @@
     font-weight: 400;
 }
 .footer__logo {
-text-align: center;
     margin-bottom: 20px;
 }
+.address-section__wrapp {
+    margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+    .address-section__wrapp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 76px;
+        padding-right: 89px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .address-section__wrapp {
+        margin-bottom: 0;
+    }
+}
+.address-section {
+    margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+    .address-section {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .address-section {
+        margin-bottom: 70px;
+    }
+}
+
 .address__list {
     font-style: normal;
 }
@@ -60,7 +96,9 @@ margin-bottom: 9px;
 }
 .social-links-section {
     text-align: center;
-    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        justify-content: start;
+    }
 }
 .social-list {
     display: flex;
