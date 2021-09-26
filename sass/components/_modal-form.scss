@@ -1,6 +1,6 @@
 .form__title-text {
     margin-bottom: 12px;
-    
+    max-width: 370px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -10,6 +10,13 @@
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
+
+    @media screen and (min-width: 1200px) {
+        .form__title-text {
+            max-width: unset;
+        }
+    }
+
 .form__field {
     margin-bottom: 10px;
 }
@@ -33,7 +40,7 @@
 .form__input {
     padding-left: 42px;
 
-    width: 448px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -113,6 +120,7 @@
 }
 .checkbox__wrapper {
     display: flex;
+    font-size: 12px;
 }
 .check__label {
     display: flex;
