@@ -1,6 +1,10 @@
 .team {
     background-color: var(--primary-bg-color);
 }
+.team img {
+    max-width: 100%;
+    height: auto;
+}
 
 .team__item-card {
     background-color: var(--white-color);

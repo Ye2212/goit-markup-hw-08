@@ -14,16 +14,18 @@
     background-color: var(--grey-bg-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)),
-    url(../images/design-img/Img-min.jpg);
-    @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
+    url(../images/img-respons/mobile/imghero.jpg);
 
+    // @media screen and (min-width: 1200px) {
+    //     padding-top: 200px;
+    //     padding-bottom: 200px;
+    // }
 }
+
 .hero__title {
     text-align: center;
     max-width: 360px;
+    margin-top: 0;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -40,7 +42,6 @@
         max-width: 690px;
     }
 }
-
 .hero__button {
     text-align: center;
     padding-top: 10px;
@@ -66,4 +67,46 @@
     &:focus {
         background-color: #188ce8;
         }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/img-respons/mobile/imghero@2x.jpg);
+    }
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/img-respons/tablet/imghero.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/img-respons/tablet/imghero@2x.jpg);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hero {
+        min-height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/img-respons/desktop/imghero.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) and (min-width: 1200px),
+    (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/img-respons/desktop/imghero@2x.jpg);
+    }
 }

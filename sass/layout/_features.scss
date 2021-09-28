@@ -1,3 +1,9 @@
+.features {
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 47px;
+    }
+}
 .features__list {
     @media screen and (min-width: 768px) {
         display: flex;
@@ -5,11 +11,11 @@
         margin-top: -30px;
         margin-left: -30px;
     }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: -30px;
-        margin-left: -30px;
+@media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
     }
 }
 
@@ -28,7 +34,6 @@
     margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
-        width: 50%;
         margin-bottom: 0;
     }
 }
@@ -64,7 +69,6 @@
     .features__title {
         text-align: start;
     }
-    
 }
 .features__text {
 line-height: 1.71;
