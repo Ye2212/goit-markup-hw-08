@@ -55,16 +55,17 @@
         margin-right: 70px;
     }
 }
-
 .address__list {
     font-style: normal;
 }
 .footer__links-list {
     text-align: center;
     margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
     @media screen and (min-width: 1200px) {
         text-align: left;
-        margin-bottom: 0;
     }
 }
 .address__item:not(:last-child) {
@@ -89,7 +90,6 @@ margin-bottom: 9px;
 }
 .footer__title {
     margin-bottom: 20px;
-    text-align: baseline;
 
     color: var(--white-color);
     font-weight: 700;
