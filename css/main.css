@@ -1191,7 +1191,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    min-width: 528px;
   }
 }
 
