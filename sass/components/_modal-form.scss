@@ -120,6 +120,7 @@
 }
 .checkbox__wrapper {
     display: flex;
+    align-items: center;
     font-size: 12px;
 }
 .check__label {
@@ -150,7 +151,15 @@
     background-color: var(--accent-color);
     border: none;
 } 
+.checkbox__policy-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkbox__policy-text {
+    display: inline-block;
+}
 .checkbox__policy-link {
+    // display: inline-block;
     color: var(--accent-color);
     margin-left: 5px;
 }
